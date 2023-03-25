@@ -31,7 +31,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
             
-            
+            alert('ok');
             
                                                                      
                      
@@ -45,7 +45,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
             var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "http://localhost:3000/download/",
+        "url": "https://tiny-tick-tiara.cyclic.app/download",
         "method": "GET",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
