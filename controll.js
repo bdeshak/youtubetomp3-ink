@@ -46,7 +46,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
         "async": true,
         "crossDomain": true,
         "url": "https://tiny-tick-tiara.cyclic.app/download",
-        "method": "GET",
+        "method": "POST",
         "headers": {
             "content-type": "application/x-www-form-urlencoded"
         },
