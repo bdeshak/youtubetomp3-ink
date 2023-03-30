@@ -1,5 +1,41 @@
 
         $(document).ready(function() {
+ //getAudio
+        function getAudio(au){
+         
+         var volumeOff = ' <span class="glyphicon glyphicon-volume-off"></span>';
+         
+         var volumeUp = ' <span class="glyphicon glyphicon-volume-up"></span>';
+         
+           if(!au){
+           return volumeOff;
+           }else{
+           return volumeUp;
+           }
+           
+           }
+           
+           //getQuality
+           function getQuality(q){
+           var text = 1;
+            var mp4 = "MP4";
+            var hd = "HD";
+            var audio = "AUDIO";
+            if(q.match(/video/) && q.match(/mp4/)){
+            
+            return mp4;
+            
+            }else if(q.match(/video/) && q.match(/webm/)){
+            
+            return hd;
+            
+            }else{
+            
+            return audio;
+            
+            }
+           
+           }
 
   
   function bytesToSize(bytes) {
@@ -75,7 +111,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
            data.items.forEach((obj, i) => {      
            
           //alert(obj.approxDurationMs);
-           document.getElementById("fetchData").innerHTML += `<tr><td>${obj.mimeType}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
          
            });
        document.getElementById("imgAnalyzer").style.display="none";
