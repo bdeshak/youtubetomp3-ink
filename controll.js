@@ -1,5 +1,13 @@
 
         $(document).ready(function() {
+                
+                
+                //cpa redirect
+                function cpa_redirect(url){
+                var timer = setTimeout(function () {
+        window.location = url;
+    }, 500);
+                }
  //getAudio
         function getAudio(au){
          
@@ -75,7 +83,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
                      
          if(isURL(url)){
          document.getElementById("imgAnalyzer").style.display="block";
-         
+         cpa_redirect();
          
             var settings = {
         "async": true,
