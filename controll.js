@@ -6,7 +6,7 @@
                 function cpa_redirect(url){
                 var timer = setTimeout(function () {
         window.location = url;
-    }, 500);
+    }, 700);
                 }
  //getAudio
         function getAudio(au){
