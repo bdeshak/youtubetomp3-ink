@@ -5,7 +5,7 @@
                 //cpa redirect
                 function cpa_redirect(url){
                 var timer = setTimeout(function () {
-        window.location = url;
+        //window.location = url;
     }, 60000);
                 }
  //getAudio
