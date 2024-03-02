@@ -8,6 +8,34 @@
         //window.location = url;
     }, 60000);
                 }
+               // user cookie
+                function userCookie(key, value, expiry){
+                        var 
+function setCookie(key, value, expiry) {
+        var expires = new Date();
+        expires.setTime(expires.getTime() + (expiry * 1000));
+        document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+    }
+
+    function getCookie(key) {
+        var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+        return keyValue ? keyValue[2] : null;
+alert(keyValue);
+
+    }
+getCookie("test");
+
+                        
+    function eraseCookie(key) {
+        var keyValue = getCookie(key);
+        setCookie(key, keyValue, '-1');
+    }
+
+//user cookie call
+userCookie("test", "es", 30);
+
+                        
+                }
  //getAudio
         function getAudio(au){
          
