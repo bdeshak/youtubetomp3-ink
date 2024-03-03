@@ -33,8 +33,7 @@ getCookie("test");
                 }
                 
                 
-//user cookie call
-userCookie("test", "es", 30);
+
                 
                
                 //cpa redirect
@@ -111,7 +110,8 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
             
-            
+            //user cookie call
+userCookie("test", "es", 30);
                                                                      
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
