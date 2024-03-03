@@ -1,7 +1,7 @@
 
         $(document).ready(function() {
                 
-                alert(7);
+               
                 //cpa redirect
                 function cpa_redirect(url){
                 var timer = setTimeout(function () {
