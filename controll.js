@@ -115,8 +115,7 @@ window.location.href = "https://youtubetomp3.ink/free-hosting.html";
             const url = $("input:text").val();
             
             
-            // call getCookie
-                    getCookie("test");                              
+                                          
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
                      
