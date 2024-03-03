@@ -11,7 +11,7 @@ function setCookie(key, value, expiry) {
     }
     
     //call setCookie
-    setCookie(key, value, expiry)
+    setCookie(key, value, expiry);
 
     function getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
