@@ -102,7 +102,10 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
 }
   
   
-  
+  $("body").on("click", () => {
+alert(45);
+
+  });
   
   
   
