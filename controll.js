@@ -1,18 +1,18 @@
 
         $(document).ready(function() {
-
+alert(2);
                // user cookie
                // function userCookie(key, value, expiry){
                         
 function setCookie(key, value, expiry) {
-        alert(2);
+        
         var expires = new Date();
         expires.setTime(expires.getTime() + (expiry * 1000));
         document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
     }
     
     //call setCookie
-    //setCookie(key, value, expiry);
+setCookie("test", "es", 30);
 
     function getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
@@ -108,10 +108,8 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
-            //call setCookie
-    //setCookie(key, value, expiry);
-            //user cookie call
-setCookie("test", "es", 30);
+            
+            
             // call getCookie
                     getCookie("test");                              
                      
