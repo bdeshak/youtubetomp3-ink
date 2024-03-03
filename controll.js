@@ -1,6 +1,6 @@
 
         $(document).ready(function() {
-alert(2);
+
                // user cookie
                // function userCookie(key, value, expiry){
                         
@@ -104,7 +104,7 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   $("body").on("click", () => {
 alert(45);
 if(getCookie("test") == null){
-window.location.href = "https://youtubetomp3.ink/get-free-hosting.html";
+window.location.href = "https://youtubetomp3.ink/free-hosting.html";
 
 }
   });
