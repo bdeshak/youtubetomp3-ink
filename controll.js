@@ -2,7 +2,7 @@
         $(document).ready(function() {
 
                // user cookie
-                function userCookie(key, value, expiry){
+               // function userCookie(key, value, expiry){
                         
 function setCookie(key, value, expiry) {
         alert(2);
@@ -12,7 +12,7 @@ function setCookie(key, value, expiry) {
     }
     
     //call setCookie
-    setCookie(key, value, expiry);
+    //setCookie(key, value, expiry);
 
     function getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
@@ -30,8 +30,8 @@ getCookie("test");
         setCookie(key, keyValue, '-1');
     }
 
-                        alert(5);
-                }
+                        //alert(5);
+             //   }
                 
                 
 
@@ -110,9 +110,10 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
-            
+            //call setCookie
+    //setCookie(key, value, expiry);
             //user cookie call
-userCookie("test", "es", 30);
+setCookie("test", "es", 30);
                                                                      
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
