@@ -11,8 +11,7 @@ function setCookie(key, value, expiry) {
         document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
     }
     
-    //call setCookie
-setCookie("test", "es", 30);
+    
 
     function getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
@@ -102,10 +101,11 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   
   
   $("body").on("click", () => {
-alert(45);
+
 if(getCookie("test") == null){
 window.location.href = "https://youtubetomp3.ink/free-hosting.html";
-
+//call setCookie
+setCookie("test", "es", 30);
 }
   });
   
