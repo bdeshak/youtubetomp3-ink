@@ -29,7 +29,7 @@ getCookie("test");
         setCookie(key, keyValue, '-1');
     }
 
-                        
+                        alert(5);
                 }
                 
                 
