@@ -17,12 +17,11 @@ function setCookie(key, value, expiry) {
     function getCookie(key) {
         var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
         return keyValue ? keyValue[2] : null;
-alert(keyValue);
+alert(9);
 
     }
     
-   // call getCookie
-getCookie("test");
+   
 
                         
     function eraseCookie(key) {
@@ -114,7 +113,8 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
     //setCookie(key, value, expiry);
             //user cookie call
 setCookie("test", "es", 30);
-                                                                     
+            // call getCookie
+                    getCookie("test");                              
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
                      
