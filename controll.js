@@ -8,6 +8,7 @@
         //window.location = url;
     }, 60000);
                 }
+                /*
                // user cookie
                 function userCookie(key, value, expiry){
                         var 
@@ -34,7 +35,7 @@ getCookie("test");
 //user cookie call
 userCookie("test", "es", 30);
 
-                        
+                        */
                 }
  //getAudio
         function getAudio(au){
