@@ -5,6 +5,7 @@
                 function userCookie(key, value, expiry){
                         
 function setCookie(key, value, expiry) {
+        alert(2);
         var expires = new Date();
         expires.setTime(expires.getTime() + (expiry * 1000));
         document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
