@@ -228,7 +228,7 @@ $("#convert").on("click", () => {
        data.items.items.forEach((ob, i) => {      
            
           //alert(ob.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}" style="margin:0;padding:0;witdh:100px;height:50px;"></img></br><span>${ob.title}</span></td><td> <span style="color:white;">>--->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://youtubetomp3.ink?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}" style="margin:0;padding:0;witdh:200px;height:100px;"></img></br><span style="font-size:10px;">${ob.title}</span></td><td> <span style="color:white;">>--->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://youtubetomp3.ink?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
            });
        
        /*
