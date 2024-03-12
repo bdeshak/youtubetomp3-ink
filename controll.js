@@ -164,8 +164,8 @@ setCookie("test", "es", 30);
        document.getElementById("imgAnalyzer").style.display="none";
         
     });
-            }else{
-                 alert("Put the youtube video link Or Search.")
+            }else if(!isUrl(url) && url !== ""){
+                 
          document.getElementById("imgAnalyzer").style.display="block";
          var settings = {
         "async": true,
@@ -216,6 +216,8 @@ setCookie("test", "es", 30);
     });
          
          
+         }else{
+             alert("Put the youtube video link Or Search.")
          }
             });
             
