@@ -111,6 +111,22 @@ setCookie("test", "es", 30);
   
 
 
+function getCurrentURL () {
+  return window.location.href
+}
+
+// Example
+const url = getCurrentURL()
+//alert(url);
+let searchParams = new URLSearchParams(window.location.search)
+let param = searchParams.get('dldurl')
+
+alert(peram);
+
+
+
+                
+
 $("#convert").on("click", () => {
             alert('result');
             });
