@@ -164,7 +164,52 @@ setCookie("test", "es", 30);
        document.getElementById("imgAnalyzer").style.display="none";
         
     });
-            }else{alert("put the youtube video link!")}
+            }else{
+                 alert("put the youtube video link!")
+         
+         var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://tiny-tick-tiara.cyclic.app/youtubeSearch/",
+        "method": "GET",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "username": url,
+            "password": "12345678"
+        }
+    }
+    
+    $.ajax(settings).done(function (data) {
+      // alert(data.thumb[1].url);
+      // alert(data.items.mimetype);
+       
+       
+       
+       
+      try{
+      let millis = data.items[1].approxDurationMs;
+      
+      const videoMS ="160357"; //alert(data.items[1].approxDurationMs);
+      const date = new Date(videoMS);
+       document.getElementById("videoTitle").innerHTML = `<span> ${data.videoTitle} <br >Duration: ${ msToTime(millis) }:${date.getSeconds()} minutes</span>`;
+       
+       $("#thumbnail").attr("src", data.thumb[1].url);
+       }catch(err){alert(err);}
+       
+           data.items.forEach((obj, i) => {      
+           
+          //alert(obj.approxDurationMs);
+           document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
+         
+           });
+       document.getElementById("imgAnalyzer").style.display="none";
+        
+    });
+         
+         
+         }
             });
             
         });
