@@ -184,10 +184,15 @@ setCookie("test", "es", 30);
     $.ajax(settings).done(function (data) {
             alert(data.items.items[0].id);
             
-       alert(data.items.items.items[0].id);
+       //alert(data.items.items.items[0].id);
       // alert(data.items.mimetype);
        
-       
+       data.items.items.forEach((obj, i) => {      
+           
+          //alert(obj.approxDurationMs);
+           document.getElementById("fetchData").innerHTML += `<tr><td>${obj.id)}</td></tr>`;
+         
+           });
        
        /*
       try{
