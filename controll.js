@@ -13,7 +13,7 @@ let searchParams = new URLSearchParams(window.location.search);
                 
 let param = searchParams.get('dldurl');
 if(param){
-alert(param);
+//alert(param);
         YtConverter(param);
 }
 
@@ -218,9 +218,9 @@ $("#convert").on("click", () => {
             "password": "12345678"
         }
     }
-    alert('ok');
+   // alert('ok');
     $.ajax(settings).done(function (data) {
-            alert(data.items.items[0].id);
+            //alert(data.items.items[0].id);
             
        //alert(data.items.items.items[0].id);
       // alert(data.items.mimetype);
@@ -228,7 +228,7 @@ $("#convert").on("click", () => {
        data.items.items.forEach((ob, i) => {      
            
           alert(ob.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}"></img></td><td> <span style="color:#EE0BFF;">>-------->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://youtubetomp3.ink?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}" style="margin:0;padding:0;witdh:30px;height:15px;"></img></td><td> <span style="color:white;">>--->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://youtubetomp3.ink?dldurl=https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Convert </a> </button> </td></tr>`;
            });
        
        /*
