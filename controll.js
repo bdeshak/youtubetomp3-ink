@@ -196,14 +196,14 @@ setCookie("test", "es", 30);
        document.getElementById("videoTitle").innerHTML = `<span> ${data.videoTitle} <br >Duration: ${ msToTime(millis) }:${date.getSeconds()} minutes</span>`;
        
        $("#thumbnail").attr("src", data.thumb[1].url);
-       }catch(err){alert(err);}*/
+       }catch(err){alert(err);}
        
            data.items.items.items.forEach((obj, i) => {      
            
           //alert(obj.approxDurationMs);
            document.getElementById("fetchData").innerHTML += '<tr><td>hello</td> </tr>';
          
-           });
+           });*/
       // document.getElementById("imgAnalyzer").style.display="none";
         
     });
