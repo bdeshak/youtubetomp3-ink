@@ -180,8 +180,9 @@ setCookie("test", "es", 30);
             "password": "12345678"
         }
     }
-    
+    alert('ok');
     $.ajax(settings).done(function (data) {
+            alert(8);
        alert(data.items.items.items[0].id);
       // alert(data.items.mimetype);
        
