@@ -1,4 +1,4 @@
-
+I'm
         $(document).ready(function() {
 
                // user cookie
@@ -190,7 +190,7 @@ setCookie("test", "es", 30);
        data.items.items.forEach((obj, i) => {      
            
           alert(obj.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${obj.thumbnail.thumbnails[0].url}"></img>ok</td></td>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${obj.thumbnail.thumbnails[0].url}"></img></td></tr>`;
          
            });
        
