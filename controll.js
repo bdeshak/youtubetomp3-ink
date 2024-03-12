@@ -14,6 +14,7 @@ let searchParams = new URLSearchParams(window.location.search);
 let param = searchParams.get('dldurl');
 if(param){
 alert(param);
+        YtConverter(param);
 }
 
 
@@ -255,10 +256,51 @@ $("#convert").on("click", () => {
          }else{
              alert("Put the youtube video link Or Search Keywords.");
          }
-            });
-            $("#convert").on("click", () => {
-            //const atrb = $("#convert").getAttribute("class");
-            alert(66);
-            });
+            function YtConverter(ytUrl){
+              
+         document.getElementById("imgAnalyzer").style.display="block";
+         cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
+         
+            var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://tiny-tick-tiara.cyclic.app/download/",
+        "method": "GET",
+        "headers": {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        "data": {
+            "username": ytUrl,
+            "password": "12345678"
+        }
+    }
+    
+    $.ajax(settings).done(function (data) {
+      // alert(data.thumb[1].url);
+      // alert(data.items.mimetype);
+       
+       
+       
+       
+      try{
+      let millis = data.items[1].approxDurationMs;
+      
+      const videoMS ="160357"; //alert(data.items[1].approxDurationMs);
+      const date = new Date(videoMS);
+       document.getElementById("videoTitle").innerHTML = `<span> ${data.videoTitle} <br >Duration: ${ msToTime(millis) }:${date.getSeconds()} minutes</span>`;
+       
+       $("#thumbnail").attr("src", data.thumb[1].url);
+       }catch(err){alert(err);}
+       
+           data.items.forEach((obj, i) => {      
+           
+          //alert(obj.approxDurationMs);
+           document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
+         
+           });
+       document.getElementById("imgAnalyzer").style.display="none";
+        
+    });
+            }
         });
     
