@@ -111,8 +111,8 @@ setCookie("test", "es", 30);
   
 
 
-$("#convert").on("click", () => {
-            alert('convert');
+$("#resul").on("click", () => {
+            alert('result');
             });
 
 
@@ -230,6 +230,8 @@ $("#convert").on("click", () => {
              alert("Put the youtube video link Or Search Keywords.");
          }
             });
-            
+            $("#convert").on("click", () => {
+            alert('convert');
+            });
         });
     
