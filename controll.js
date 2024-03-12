@@ -189,8 +189,8 @@ setCookie("test", "es", 30);
        
        data.items.items.forEach((obj, i) => {      
            
-          //alert(obj.approxDurationMs);
-           document.getElementById("fetchData").innerHTML += `<tr><td>${obj.id)}</td></tr>`;
+          alert(obj.id);
+           //document.getElementById("fetchData").innerHTML += `<tr><td>${obj.id)}</td></tr>`;
          
            });
        
