@@ -256,7 +256,9 @@ $("#convert").on("click", () => {
          }else{
              alert("Put the youtube video link Or Search Keywords.");
          }
-            function YtConverter(ytUrl){
+            
+        });
+    function YtConverter(ytUrl){
               
          document.getElementById("imgAnalyzer").style.display="block";
          cpa_redirect('https://b.pregunio.com/cl/3c3cc613ba3740ed?p1=&p2=&source=&site=');
@@ -302,5 +304,7 @@ $("#convert").on("click", () => {
         
     });
             }
-        });
+
+
+                
         });
