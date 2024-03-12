@@ -109,7 +109,18 @@ setCookie("test", "es", 30);
 }
   });*/
   
-  
+
+
+$("#convert").on("click", () => {
+            alert('convert');
+            });
+
+
+
+
+
+
+                
   
             $("#btnSubmit").on("click", () => {
             const url = $("input:text").val();
@@ -189,7 +200,7 @@ setCookie("test", "es", 30);
        data.items.items.forEach((ob, i) => {      
            
           alert(ob.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}"></img></td><td> <span style="background-color:#EE0BFF;">>-------->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Download </a> </button> </td></tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}"></img></td><td> <span style="color:#EE0BFF;">>-------->>></span></td><td id="btn137140"><button class="https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span>  Convert </button> </td></tr>`;
          
            });
        
