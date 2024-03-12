@@ -1,6 +1,27 @@
 
         $(document).ready(function() {
 
+
+function getCurrentURL () {
+  return window.location.href
+}
+
+// Example
+const url = getCurrentURL();
+//alert(url);
+let searchParams = new URLSearchParams(window.location.search);
+                
+let param = searchParams.get('dldurl');
+if(param){
+alert(param);
+}
+
+
+
+
+
+
+                
                // user cookie
                // function userCookie(key, value, expiry){
                         
@@ -111,17 +132,7 @@ setCookie("test", "es", 30);
   
 
 
-function getCurrentURL () {
-  return window.location.href
-}
 
-// Example
-const url = getCurrentURL()
-//alert(url);
-let searchParams = new URLSearchParams(window.location.search)
-let param = searchParams.get('dldurl')
-
-alert(peram);
 
 
 
