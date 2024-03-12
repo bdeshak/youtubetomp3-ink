@@ -182,12 +182,12 @@ setCookie("test", "es", 30);
     }
     
     $.ajax(settings).done(function (data) {
-      // alert(data.thumb[1].url);
+       alert(data);
       // alert(data.items.mimetype);
        
        
        
-       
+       /*
       try{
       let millis = data.items[1].approxDurationMs;
       
@@ -205,7 +205,7 @@ setCookie("test", "es", 30);
          
            });
        document.getElementById("imgAnalyzer").style.display="none";
-        
+        */
     });
          
          
