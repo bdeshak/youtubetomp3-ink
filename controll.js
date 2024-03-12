@@ -204,7 +204,7 @@ setCookie("test", "es", 30);
            document.getElementById("fetchData").innerHTML += '<tr><td>hello</td> </tr>';
          
            });*/
-      // document.getElementById("imgAnalyzer").style.display="none";
+       document.getElementById("imgAnalyzer").style.display="none";
         
     });
          
