@@ -231,7 +231,8 @@ $("#resul").on("click", () => {
          }
             });
             $("#convert").on("click", () => {
-            alert('convert');
+            const atrb = $("#convert").getAttribute("class");
+            alert(atrb);
             });
         });
     
