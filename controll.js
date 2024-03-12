@@ -14,7 +14,7 @@ let searchParams = new URLSearchParams(window.location.search);
 let param = searchParams.get('dldurl');
 if(param){
 alert(param);
-        //YtConverter(param);
+        YtConverter(param);
 }
 
 
@@ -303,4 +303,4 @@ $("#convert").on("click", () => {
     });
             }
         });
-    
+        });
