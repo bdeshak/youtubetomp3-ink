@@ -198,10 +198,10 @@ setCookie("test", "es", 30);
        $("#thumbnail").attr("src", data.thumb[1].url);
        }catch(err){alert(err);}
        
-           data.items.items.items.forEach((obj, i) => {      
+           data.items.forEach((obj, i) => {      
            
           //alert(obj.approxDurationMs);
-           document.getElementById("fetchData").innerHTML += '<tr><td>hello</td> </tr>';
+           document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
          
            });
        document.getElementById("imgAnalyzer").style.display="none";
