@@ -190,7 +190,7 @@ setCookie("test", "es", 30);
        data.items.items.forEach((obj, i) => {      
            
           alert(obj.id);
-           document.getElementById("fetchData").innerHTML += `<td><img src="${obj.thumbnail.thumbnails[0].url}"></img></td>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${obj.thumbnail.thumbnails[0].url}"></img></td><td> ${ obj.id) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.id}> Download </a> </button> </td></tr>`;
          
            });
        
