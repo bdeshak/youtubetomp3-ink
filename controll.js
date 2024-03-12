@@ -165,7 +165,6 @@ setCookie("test", "es", 30);
         
     });
             }else if(!isUrl(url) && url !== ""){
-                 
          document.getElementById("imgAnalyzer").style.display="block";
          var settings = {
         "async": true,
@@ -210,14 +209,14 @@ setCookie("test", "es", 30);
           //alert(obj.approxDurationMs);
            document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
          
-           });*/
+           });
        document.getElementById("imgAnalyzer").style.display="none";
-        
+        */
     });
          
          
          }else{
-             alert("Put the youtube video link Or Search.")
+             alert("Put the youtube video link Or Search.");
          }
             });
             
