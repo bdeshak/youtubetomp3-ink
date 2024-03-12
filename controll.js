@@ -182,7 +182,7 @@ setCookie("test", "es", 30);
     }
     
     $.ajax(settings).done(function (data) {
-       alert(data);
+       alert(data.items);
       // alert(data.items.mimetype);
        
        
