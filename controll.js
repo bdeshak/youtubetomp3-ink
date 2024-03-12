@@ -196,16 +196,16 @@ setCookie("test", "es", 30);
        document.getElementById("videoTitle").innerHTML = `<span> ${data.videoTitle} <br >Duration: ${ msToTime(millis) }:${date.getSeconds()} minutes</span>`;
        
        $("#thumbnail").attr("src", data.thumb[1].url);
-       }catch(err){alert(err);}
+       }catch(err){alert(err);}*/
        
-           data.items.forEach((obj, i) => {      
+           data.items.items.items.forEach((obj, i) => {      
            
           //alert(obj.approxDurationMs);
-           document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src"${obj.thumbnail.thumbnails[0].url}"/></td> </tr>`;
          
            });
-       document.getElementById("imgAnalyzer").style.display="none";
-        */
+      // document.getElementById("imgAnalyzer").style.display="none";
+        
     });
          
          
