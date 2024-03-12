@@ -201,7 +201,7 @@ setCookie("test", "es", 30);
            data.items.items.items.forEach((obj, i) => {      
            
           //alert(obj.approxDurationMs);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src"${obj.thumbnail.thumbnails[0].url}"/></td> </tr>`;
+           document.getElementById("fetchData").innerHTML += '<tr><td>hello</td> </tr>';
          
            });
       // document.getElementById("imgAnalyzer").style.display="none";
