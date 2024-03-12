@@ -164,7 +164,7 @@ setCookie("test", "es", 30);
        document.getElementById("imgAnalyzer").style.display="none";
         
     });
-            }else if(!isUrl(url) && url !== ""){
+            }else if(!isURL(url) && url !== ""){
          document.getElementById("imgAnalyzer").style.display="block";
          var settings = {
         "async": true,
