@@ -186,14 +186,14 @@ setCookie("test", "es", 30);
             
        //alert(data.items.items.items[0].id);
       // alert(data.items.mimetype);
-       
+       /*
        data.items.items.forEach((obj, i) => {      
            
           alert(obj.id);
            //document.getElementById("fetchData").innerHTML += `<td><img src="${obj.thumbnail.thumbnails[0].url}"></img></td>`;
          
            });
-       
+       */
        /*
       try{
       let millis = data.items[1].approxDurationMs;
