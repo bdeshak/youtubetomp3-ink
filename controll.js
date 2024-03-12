@@ -111,7 +111,7 @@ setCookie("test", "es", 30);
   
 
 
-$("#resul").on("click", () => {
+$("#convert").on("click", () => {
             alert('result');
             });
 
@@ -231,8 +231,8 @@ $("#resul").on("click", () => {
          }
             });
             $("#convert").on("click", () => {
-            const atrb = $("#convert").getAttribute("class");
-            alert(atrb);
+            //const atrb = $("#convert").getAttribute("class");
+            alert(66);
             });
         });
     
