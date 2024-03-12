@@ -189,7 +189,7 @@ setCookie("test", "es", 30);
        data.items.items.forEach((ob, i) => {      
            
           alert(ob.id);
-           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}"></img></td><td>${ob.id}</td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Download </a> </button> </td></tr>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="${ob.thumbnail.thumbnails[0].url}"></img></td><td> <span style="background-color:#EE0BFF;">>-------->>></span></td><td id="btn137140"><button class="btn" id="convert" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href="https://m.youtube.com/watch?v=${ob.id}=${ob.shortBylineText.runs[0].navigationEndpoint.clickTrackingParams}"> Download </a> </button> </td></tr>`;
          
            });
        
@@ -209,14 +209,14 @@ setCookie("test", "es", 30);
           //alert(obj.approxDurationMs);
            document.getElementById("fetchData").innerHTML += `<tr><td>${getQuality(obj.mimeType)+getAudio(obj.hasAudio)}</td><td> ${ bytesToSize(obj.contentLength) } </td><td id="btn137140"><button class="btn" style="background-color:#EE0BFF;"><span class="glyphicon glyphicon-film"></span> <a href=${obj.url}> Download </a> </button> </td> </tr>`;
          
-           });
+           });*/
        document.getElementById("imgAnalyzer").style.display="none";
-        */
+        
     });
          
          
          }else{
-             alert("Put the youtube video link Or Search.");
+             alert("Put the youtube video link Or Search Keywords.");
          }
             });
             
