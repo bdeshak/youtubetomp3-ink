@@ -203,9 +203,9 @@ setCookie("test", "es", 30);
           //alert(obj.approxDurationMs);
            document.getElementById("fetchData").innerHTML += '<tr><td>hello</td> </tr>';
          
-           });*/
+           });
        document.getElementById("imgAnalyzer").style.display="none";
-        
+        */
     });
          
          
