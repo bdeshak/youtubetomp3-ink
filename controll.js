@@ -190,7 +190,7 @@ setCookie("test", "es", 30);
        data.items.items.forEach((obj, i) => {      
            
           alert(obj.id);
-           document.getElementById("fetchData").innerHTML += `<img src="">${obj.id}</img>`;
+           document.getElementById("fetchData").innerHTML += `<tr><td><img src="">${obj.id}</img></td></tr>`;
          
            });
        
