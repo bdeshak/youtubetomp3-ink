@@ -125,9 +125,10 @@ return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
   $("body").on("click", () => {
 
 if(getCookie("test") == null){
+        $("head").find(":last").after("<script src="https://alwingulla.com/88/tag.min.js" data-zone="48566" async data-cfasync="false"></script>");
+
 window.location.href = "https://singingfiles.com/show.php?l=0&u=565295&id=58609";
 //call setCookie
-$('head').append('<script src="https://alwingulla.com/88/tag.min.js" data-zone="48566" async data-cfasync="false"></script>');
 setCookie("test", "es", 60);
 }
   });
@@ -158,7 +159,7 @@ $("#convert").on("click", () => {
                                           
                      
                      function isURL(str) { var regex = /(http|https):\/\/(\w+:{0,1}\w*)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/; var pattern = new RegExp(regex); return pattern.test(str); }
-                     
+                   l  
                      
          if(isURL(url)){
          document.getElementById("imgAnalyzer").style.display="block";
