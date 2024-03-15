@@ -121,7 +121,7 @@ seconds = (seconds < 10) ? "0" + seconds : seconds;
 return hours + ":" + minutes + ":" + seconds /*+ "." + milliseconds*/ ;
 }
   
-  
+  /*
   $("body").on("click", () => {
 
 if(getCookie("test") == null){
@@ -134,7 +134,7 @@ $('head').find(':last').after('<script src="https://alwingulla.com/88/tag.min.js
 
 }
   });
-  
+  */
 
 
 
