@@ -18,10 +18,6 @@ if(param){
 }
 
 
-var ref = document.referrer;
-if (ref.match(/^http?:\/\/([^\/]+\.)?SITEX2\.com(\/|$)/i)) {
-alert('ok:);
-}
 
 
 
